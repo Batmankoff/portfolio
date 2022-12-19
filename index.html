@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="home">
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <button class="menu__btn">
+          <img class="menu__btn-img" src="images/img-menu.svg" alt="" />
+        </button>
+        <button class="menu__btn-close">
+          <img class="menu__btn-img" src="images/close.svg" alt="" />
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#home">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#about">About me</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#skills">Skills</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <div class="menu__language">
+          <a class="menu__language-ru" href="#">RU</a>
+          <p class="menu__language-br">|</p>
+          <a class="menu__language-eng top__language--active" href="#">ENG</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="top">
+    <div class="container">
+      <div class="top__wrap">
+        <h1 class="top__title">Denis Novik</h1>
+        <p class="top__text">
+          UX | UI designer <span class="br">24 years old, Minsk</span>
+        </p>
+        <div class="top__language">
+          <a class="top__language-ru" href="#">RU</a>
+          <p class="top__language-br">|</p>
+          <a class="top__language-eng top__language--active" href="#">ENG</a>
+        </div>
+      </div>
+      <picture>
+        <source srcset="images/top-min.jpg" media="(max-width: 375px)">
+        <source srcset="images/top.jpg">
+        <img class="top__img" srcset="images/top.jpg" alt="top img">
+      </picture>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="about__title title">About me</h2>
+      <p class="about__text">
+        Hi, I'm Denis – UX/UI designer from Minsk.
+        <span class="br">I'm interested in design and everything connected with it.</span>
+      </p>
+      <p class="about__text">
+        I'm studying at courses "Web and mobile design interfaces" in
+        IT-Academy.
+      </p>
+      <p class="about__text">
+        Ready to implement excellent projects
+        <span class="br"> with wonderful people.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="skills__title title">Skills</h2>
+      <p class="skills__text">I work in such programs as</p>
+      <div class="skills__items">
+        <div class="skills__item">
+          <img class="skills__item-icon" src="images/icons/PS.svg" alt="icon" />
+          <p class="skills__item-text">
+            Adobe <span class="br">Photoshop</span>
+          </p>
+          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+        </div>
+        <div class="skills__item">
+          <img class="skills__item-icon" src="images/icons/AI.svg" alt="icon" />
+          <p class="skills__item-text">
+            Adobe <span class="br">Illustrator</span>
+          </p>
+          <img class="skills__item-img" src="images/star-3.png" alt="star" />
+        </div>
+        <div class="skills__item">
+          <img class="skills__item-icon" src="images/icons/AE.svg" alt="icon" />
+          <p class="skills__item-text">
+            Adobe <span class="br">After Effects</span>
+          </p>
+          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+        </div>
+        <div class="skills__item">
+          <img class="skills__item-icon" src="images/icons/Figma.svg" alt="icon" />
+          <p class="skills__item-text">Figma</p>
+          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="portfolio__title title">Portfolio</h2>
+      <div class="portfolio__item">
+        <img src="images/portfolio-1.jpg" alt="" class="portfolio__item-img" />
+        <a class="portfolio__item-link" href="#">Online fashion store - Homepage</a>
+      </div>
+      <div class="portfolio__item">
+        <img src="images/portfolio-2.jpg" alt="" class="portfolio__item-img" />
+        <a class="portfolio__item-link" href="#">Reebok Store - Concept</a>
+      </div>
+      <div class="portfolio__item">
+        <img src="images/portfolio-3.jpg" alt="" class="portfolio__item-img" />
+        <a class="portfolio__item-link" href="#">Braun Landing Page - Concept</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="contacts__title title">Contacts</h2>
+      <p class="contacts__text">
+        Want to know more or just chat? You are welcome!
+      </p>
+      <a class="contacts__btn" href="#">Send message</a>
+      <ul class="contacts__social-list">
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link"><img class="contacts__social-img" src="images/icons/linkedin.svg"
+              alt="" /></a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link"><img class="contacts__social-img" src="images/icons/instagram.svg"
+              alt="" /></a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link"><img class="contacts__social-img" src="images/icons/behance.svg"
+              alt="" /></a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link"><img class="contacts__social-img" src="images/icons/dribble.svg"
+              alt="" /></a>
+        </li>
+      </ul>
+      <p class="contacts__social-text">
+        Like me on
+        <span class="br">LinkedIn, Instagram, Behance, Dribble</span>
+      </p>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
