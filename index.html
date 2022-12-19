@@ -4,19 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/jquery.rateyo.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body id="home">
   <header class="header">
     <div class="container">
+      <button class="open-btn">
+        <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="33" height="3.83721" fill="black" />
+          <rect y="7.67383" width="33" height="3.83721" fill="black" />
+          <rect y="15.3496" width="33" height="3.83721" fill="black" />
+        </svg>
+      </button>
       <nav class="menu">
-        <button class="menu__btn">
-          <img class="menu__btn-img" src="images/img-menu.svg" alt="" />
-        </button>
         <button class="menu__btn-close">
-          <img class="menu__btn-img" src="images/close.svg" alt="" />
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" fill="#828282" />
+            <rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)"
+              fill="#828282" />
+          </svg>
         </button>
         <ul class="menu__list">
           <li class="menu__list-item">
@@ -56,7 +65,7 @@
           <a class="top__language-eng top__language--active" href="#">ENG</a>
         </div>
       </div>
-      <picture>
+      <picture class="top__picture">
         <source srcset="images/top-min.jpg" media="(max-width: 375px)">
         <source srcset="images/top.jpg">
         <img class="top__img" srcset="images/top.jpg" alt="top img">
@@ -92,26 +101,28 @@
           <p class="skills__item-text">
             Adobe <span class="br">Photoshop</span>
           </p>
-          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+          <div class="star" data-rateyo-rating="4"></div>
         </div>
         <div class="skills__item">
           <img class="skills__item-icon" src="images/icons/AI.svg" alt="icon" />
           <p class="skills__item-text">
             Adobe <span class="br">Illustrator</span>
           </p>
-          <img class="skills__item-img" src="images/star-3.png" alt="star" />
+          <div class="star" data-rateyo-rating="3"></div>
         </div>
         <div class="skills__item">
           <img class="skills__item-icon" src="images/icons/AE.svg" alt="icon" />
           <p class="skills__item-text">
             Adobe <span class="br">After Effects</span>
           </p>
-          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+          <div class="star" data-rateyo-rating="4"></div>
         </div>
         <div class="skills__item">
           <img class="skills__item-icon" src="images/icons/Figma.svg" alt="icon" />
-          <p class="skills__item-text">Figma</p>
-          <img class="skills__item-img" src="images/star-4.png" alt="star" />
+          <p class="skills__item-text">
+            Figma
+          </p>
+          <div class="star" data-rateyo-rating="4"></div>
         </div>
       </div>
     </div>
@@ -134,7 +145,7 @@
       </div>
     </div>
   </section>
-
+  
   <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="contacts__title title">Contacts</h2>
@@ -167,7 +178,9 @@
     </div>
   </section>
 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.rateyo.js"></script>
   <script src="js/main.js"></script>
 </body>
 
